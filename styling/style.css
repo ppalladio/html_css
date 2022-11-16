@@ -1,7 +1,16 @@
-li:nth-child(even)/*. use even or odd to alternate between elements */ {
+li:nth-child(even) {
+    /*. use even or odd to alternate between elements */
     color: red;
 }
-a:link
-/*' this target all the anchor elements with href attribute */ {
+a:link {
+    /*' this target all the anchor elements with href attribute */
     color: rgb(117, 106, 49);
+}
+a:visited {
+    /*' for the clicked links */
+    color: #f7f7f7;
+}
+a:active {
+    /*' when the link is clicked, and while pressing */
+    background-color: aquamarine;
 }
