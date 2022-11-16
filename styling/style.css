@@ -1,0 +1,7 @@
+li:nth-child(even)/*. use even or odd to alternate between elements */ {
+    color: red;
+}
+a:link
+/*' this target all the anchor elements with href attribute */ {
+    color: rgb(117, 106, 49);
+}
