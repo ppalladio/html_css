@@ -1,3 +1,8 @@
+* {
+    /*' applied to all elements but not get inherited; */
+    border-color: red;
+}
+
 li:nth-child(even) {
     /*. use even or odd to alternate between elements */
     color: red;
@@ -13,4 +18,39 @@ a:visited {
 a:active {
     /*' when the link is clicked, and while pressing */
     background-color: aquamarine;
+}
+
+/*: pseudo elements */
+
+/*' with two :: */
+
+h2::first-letter {
+    font-size: 5rem;
+}
+/* 
+p::first-line{
+    color:blue
+} */
+
+h3 + p::first-line {
+    color: coral;
+    /*' only the p right affet h3 was selected with + */
+}
+h2{
+    position: relative;
+}
+h2::after {
+    /*' pseudo elements are inline elements by default */
+
+    content: 'TOP'; /*' content property is mandatory*/
+    background-color:  #ffe70e;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    right:0px;
+    top:-10px;
+    color:#444
+
 }
