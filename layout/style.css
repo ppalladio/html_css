@@ -350,7 +350,7 @@ nav {
     font-weight: normal;
     font-style: italic;
 }
-.row {
+/* .row {
     display: flex;
     gap: 75px;
     margin-bottom: 60px;
@@ -359,10 +359,29 @@ nav {
 
 article {
     flex: 1;
-    /*' set it to 1 will let it compute auto populate the rest of the space */
     margin-bottom: 0;
 }
 aside {
     flex: 0 0 300px;
     
+} */
+
+/*: use cssgrid to rebuild the simple page */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
+}
+.main-header{
+    grid-column: 1/-1;
+    
+}
+
+aside{
+align-self: start;
+}
+
+.footer{
+    grid-column: 1/-1;
 }
