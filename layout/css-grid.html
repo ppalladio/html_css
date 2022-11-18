@@ -36,10 +36,21 @@
                 /* STARTER */
                 font-family: sans-serif;
                 background-color: #ddd;
-                font-size: 40px;
+                font-size: 30px;
                 margin: 40px;
 
-                /* CSS GRID */
+                display: grid;
+                grid-template-columns: 200px 200px 100px 100px;
+                /* each value represents the width of a column, the more values added means more columns */
+                grid-template-rows: 300px 200px;
+                /* the width of the row, in this case, the width of two rows */
+
+                /* gap:30px; */
+                /* this property is applied to both horizontally and vertically */
+                column-gap: 30px;
+                /* horizontal spacing */
+                row-gap: 30px;
+                /* :vertical spacing */
             }
 
             .container--2 {
