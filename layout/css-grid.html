@@ -42,8 +42,12 @@
                 display: grid;
                 grid-template-columns: 200px 200px 100px 100px;
                 /* each value represents the width of a column, the more values added means more columns */
+                /* 
+                grid-template-columns: 1fr 1fr 1fr 1fr; in this case we will have 4 columns that have equal width
+                is equivalent to grid-template-columns: repeat(4,1fr); */
                 grid-template-rows: 300px 200px;
                 /* the width of the row, in this case, the width of two rows */
+                /* if we only have three grid items per row, we will have three rows and the last row does not have a height defined, it is called implicit row */
 
                 /* gap:30px; */
                 /* this property is applied to both horizontally and vertically */
