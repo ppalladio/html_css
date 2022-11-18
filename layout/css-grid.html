@@ -75,7 +75,7 @@
             }
 
             .container--2 {
-                /* STARTER */
+                
                 font-family: sans-serif;
                 background-color: black;
                 font-size: 40px;
@@ -84,7 +84,24 @@
                 width: 1000px;
                 height: 600px;
 
-                /* CSS GRID */
+                display: grid;
+                grid-template-columns: 125px 200px 125px;
+                grid-template-rows: 250px 100px;
+
+                /* aligning tracks inside container: distribute empty space */
+                justify-content: center;
+                align-content: center;
+                /* its called end and start not flex-end and flex-start  */
+
+
+                /* aligning items inside cells:moving items around inside cells */
+                align-items: center;
+                justify-items: center;
+            }
+            /* individual grid item */
+            .el--3{
+                justify-self: start;
+                align-self: end;
             }
         </style>
     </head>
