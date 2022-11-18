@@ -40,12 +40,12 @@
                 margin: 40px;
 
                 display: grid;
-                grid-template-columns: 200px 200px 100px 100px;
+                grid-template-columns: repeat(4,1fr) ;
                 /* each value represents the width of a column, the more values added means more columns */
                 /* 
                 grid-template-columns: 1fr 1fr 1fr 1fr; in this case we will have 4 columns that have equal width
                 is equivalent to grid-template-columns: repeat(4,1fr); */
-                grid-template-rows: 300px 200px;
+                grid-template-rows: 1fr 1fr;
                 /* the width of the row, in this case, the width of two rows */
                 /* if we only have three grid items per row, we will have three rows and the last row does not have a height defined, it is called implicit row */
 
@@ -55,6 +55,23 @@
                 /* horizontal spacing */
                 row-gap: 30px;
                 /* :vertical spacing */
+            }
+
+            .el--8{
+
+                grid-column: 2/3;
+                grid-row: 1/2;
+                /* the first number marks the starting position and the second number marks the ending position */
+            }
+            .el--2{
+                grid-column: 1/ span 2;
+                /* take two grid cells */
+                /* grid-column: 1/-1; 
+                if we dont know how many cells there are in one row or we want one element to span all the way to the end
+                */
+                grid-row: 2;
+                /* if the second value is just one more than the first, we can omit it */
+
             }
 
             .container--2 {
@@ -79,7 +96,7 @@
             <div class="el el--4">(4) are</div>
             <div class="el el--5">(5) amazing</div>
             <div class="el el--6">(6) languages</div>
-            <div class="el el--7">(7) to</div>
+            <!-- <div class="el el--7">(7) to</div> -->
             <div class="el el--8">(8) learn</div>
         </div>
 
