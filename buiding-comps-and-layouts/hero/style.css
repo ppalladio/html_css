@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    color: #444;
+    line-height: 1;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+header{
+    background-color: red;
+    height: 100vh;
+}
+nav {
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 52px;
+    margin-bottom: 32px;
+}
+
+p {
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.btn:link,
+.btn:visited {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #e67e22;
+    color: #fff;
+    border-radius: 9px;
+    padding: 16px 32px;
+    text-transform: capitalize;
+    text-decoration: none;
+    display: inline-block;
+}
+h2 {
+    font-size: 44px;
+    margin-bottom: 48px;
+
+}
+section{
+    padding: 96px 0;
+}
