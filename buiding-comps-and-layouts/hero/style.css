@@ -14,15 +14,29 @@ body {
     width: 1200px;
 }
 
-header{
-    background-color: red;
+header {
     height: 100vh;
+    position: relative;
+    background-image:linear-gradient(to right bottom,rgba(0,0,0,0.6),rgba(0,0,0,0.4)) ,url(hero.jpg);
+    background-size: cover;
+    color: beige;
+}
+.header-container {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.header-container-inner {
+    width: 50%;
 }
 nav {
     font-size: 20px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
+    padding-top:32px;
 }
 
 h1 {
@@ -51,8 +65,7 @@ p {
 h2 {
     font-size: 44px;
     margin-bottom: 48px;
-
 }
-section{
+section {
     padding: 96px 0;
 }
