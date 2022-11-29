@@ -8,4 +8,29 @@ body {
     font-family: 'Inter', sans-serif;
     color: #343a40;
     line-height: 1;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 80px 400px 1fr 250px;
+    grid-template-rows: 80px 1fr;
+    text-align: center;
+    font-weight: 600;
+}
+
+nav{
+    grid-row:1/-1;
+}
+menu{
+    grid-column: 2/-1;
+}
+section{
+    grid-row:2/-1;
+    grid-column: 2;
+}
+main{
+    grid-row:2/-1;
+    grid-column: 3;
+}
+aside{
+    grid-row:2/-1;
+    grid-column: 4;
 }
