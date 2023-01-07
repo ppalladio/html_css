@@ -291,3 +291,12 @@ body {
 	filter:brightness(0);
 	opacity: 0.5;
 }
+
+
+
+/*@ meals */
+
+.grid--3--cols{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
