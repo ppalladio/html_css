@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,6 +12,14 @@
             href="https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap"
             rel="stylesheet"
         />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
         <title>Ominifood</title>
     </head>
     <body>
@@ -193,11 +202,37 @@
                     <h2 class="heading-secondary">
                         Omnifood AI chooses from 5,000+ recipes
                     </h2>
-					<div class="container grid grid--3--cols">
-						<div></div>
-						<div></div>
-						<div></div>
-					</div>
+                    <div class="container grid grid--3--cols">
+                        <div class="meal">
+                            <img
+                                src="content/img/meals/meal-1.jpg"
+                                alt="meal 1"
+                                class="meal-img"
+                            />
+                            <span class="tag">Vegetarian</span>
+                            <p class="meal-title">Japanese Gyozas</p>
+                            <ul class="meal-attributes">
+                                <li class="meal-attribute">
+                                    <ion-icon name="flame-outline"></ion-icon>
+                                    <span> 650 Calories </span>
+                                </li>
+                                <li class="meal-attribute">
+                                    <ion-icon
+                                        name="restaurant-outline"
+                                    ></ion-icon>
+                                    <span> 74 NutriScore &reg; 74 </span>
+                                </li>
+                                <li class="meal-attribute">
+                                    <ion-icon
+                                        name="restaurant-outline"
+                                    ></ion-icon>
+                                    <span> 4.9 rating (537) </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="meal">Meals</div>
+                        <div class="list">List of diets</div>
+                    </div>
                 </div>
             </section>
         </main>
