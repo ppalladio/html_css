@@ -69,3 +69,21 @@ h2 {
 section {
     padding: 96px 0;
 }
+
+.grid{
+	display: grid;
+	gap:9.6rem
+}
+
+.grid--2--cols{
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.section-how{
+	padding:9.6rem 0;
+}
+
+.step-img{
+	width:50%;
+}
+
