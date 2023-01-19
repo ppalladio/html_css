@@ -457,7 +457,10 @@ body {
     border-radius: 8px;
     transition: all 0.3s ease-in-out;
 }
+.gallery-item{
+	overflow: hidden;
+}
 .gallery-item img:hover,
-.gallery-item img:avtive {
+.gallery-item img:active{
     transform: scale(1.2);
 }
