@@ -355,7 +355,7 @@ body {
     box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
     border-radius: 12px;
     overflow: hidden;
-	transition:all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
     /** overflow to show round img */
 }
 
@@ -392,8 +392,8 @@ body {
 }
 
 .meal:hover,
-.meal:active{
-	transform: translateY(-1rem);
+.meal:active {
+    transform: translateY(-1rem);
 }
 
 .link:link,
@@ -404,34 +404,60 @@ body {
     color: #e67e22;
     border-bottom: 1px solid currentColor;
     /*: we can use currentColor */
-	transition: all 0.3s;
+    transition: all 0.3s;
 }
 
 .link:hover,
 .link:active {
-	color:#cf711f;
-	border-bottom: 1px solid transparent;
+    color: #cf711f;
+    border-bottom: 1px solid transparent;
 }
 
-.testimonials{
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 4.8rem;
+.testimonials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 4.8rem;
+    column-gap: 8rem;
+}
+.section-testmonials {
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    background-color: #fdf2e9;
+    align-items: center;
+}
+.testimonial-container {
+    padding: 9.6rem;
+}
+.testimonial-img {
+    width: 6.4rem;
+    border-radius: 50%;
+    margin-bottom: 1.2rem;
 }
 
-.testimonial-img{
-	width: 6.4rem;
-	border-radius: 50%;
-	margin-bottom: 1.2rem;
+.testimonial-text {
+    font-size: 1.8rem;
+    line-height: 1.8;
+    margin-bottom: 1.6rem;
 }
 
-.testimonial-text{
-	font-size: 1.8rem;
-	line-height:1.8;
-	margin-bottom: 1.6rem;
+.testimonial-name {
+    font-size: 1.6rem;
+    color: #6f6f6f;
 }
 
-.testimonial-name{
-	font-size: 1.6rem;
-	color: #777;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    padding: 1.6rem;
+}
+.gallery-item img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+.gallery-item img:hover,
+.gallery-item img:avtive {
+    transform: scale(1.2);
 }
