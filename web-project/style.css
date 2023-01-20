@@ -542,3 +542,8 @@ body {
 
 
 }
+
+.grid--4--cols{
+	grid-template-columns: repeat(4, 1fr);
+	margin-top: 9.6rem;
+}
