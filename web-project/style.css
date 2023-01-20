@@ -547,3 +547,24 @@ body {
 	grid-template-columns: repeat(4, 1fr);
 	margin-top: 9.6rem;
 }
+
+.feature-icon{
+	color: #e67e22;
+	font-size: 3.2rem;
+	margin-bottom: 4.8rem;
+	background-color: #fdf2e9;
+	padding: 1.6rem;
+	border-radius: 50%;
+}
+.feature-title{
+	
+	font-size: 2.4rem;
+	color: #333;
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+}
+.feature-text{
+	font-size: 1.8rem;
+	line-height: 1.8;
+}
+
