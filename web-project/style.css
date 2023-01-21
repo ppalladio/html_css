@@ -596,7 +596,8 @@ body {
 }
 
 .cta-img-box{
-	background-image: url("content/img/eating.jpg");
+	background-image: linear-gradient(to right bottom, rgba(236, 153, 81, 0.25),rgba(230, 125, 34, 0.239))
+	, url("content/img/eating.jpg");
 	background-size: cover;
 	background-position: center;
 }
