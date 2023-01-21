@@ -575,3 +575,28 @@ body {
 	line-height: 1.8;
 }
 
+/*#: cta */
+
+.section-cta{
+	padding: 9.6rem;
+}
+
+.cta{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	background-image: linear-gradient(to right bottom, #eb984e,#e67e22);
+	border-radius: 11px;
+
+	/* temp*/
+	height: 30rem;
+}
+
+.cta-text-box{
+
+}
+
+.cta-img-box{
+	background-image: url("content/img/eating.jpg");
+	background-size: cover;
+	background-position: center;
+}
