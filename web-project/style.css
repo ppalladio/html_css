@@ -581,8 +581,7 @@ body {
     background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
     border-radius: 11px;
     overflow: hidden;
-    /* temp*/
-    height: 30rem;
+  
 }
 
 .cta-text-box {
@@ -613,5 +612,62 @@ body {
 	grid-template-columns: repeat(2, 1fr);
 	column-gap: 3.2rem;
 	row-gap: 2.4rem;
-	
+
 }
+
+.cta-form label {
+display: block;
+font-size: 1.6rem;
+font-weight: 500;
+margin-bottom: 1.2rem;
+}
+
+
+.cta-form input,
+.cta-form select {
+	width: 100%;
+	padding: 1.2rem;
+	font-size: 1.8rem;
+	font-family: inherit;
+	border: none;
+	background-color: #fdf2e9;
+	border-radius: 9px;
+	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+	color: inherit;
+}
+
+.cta-form input::placeholder {
+    color:#aaa
+}
+.cta-form select{
+	text-transform: capitalize;
+}
+.btn--form {
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	text-decoration: none;
+	display:inline-block;
+	font-size: 2rem;
+    font-weight: 500;
+	padding: 1.2rem;
+	border-radius: 9px;
+	background-color: #45260a;
+	color:#fdf2e9;
+	align-self: end;
+	transition: all 0.3s ease-in-out;
+	text-transform: capitalize;
+}
+.btn--form:hover
+.btn--form:focus{
+	background-color: #fff;
+	color:#555;
+}
+
+*:focus{
+	outline: none;
+	/* outline:4px dotted #e67e22;
+	outline: offset 8px;
+	 */
+	box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.30);
+	}
