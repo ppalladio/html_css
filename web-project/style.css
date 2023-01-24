@@ -468,8 +468,10 @@ body {
 /*# pricing*/
 
 .section-pricing {
-    padding: 9.6rem 0;
+padding-bottom: 1rem;
+	padding-top: 9.6rem;
 }
+
 
 .plan-header {
     text-align: center;
@@ -572,7 +574,7 @@ body {
 /*#: cta */
 
 .section-cta {
-    padding: 9.6rem;
+    padding:  12.8rem 4.8rem;
 }
 
 .cta {
@@ -679,7 +681,8 @@ body {
 /*@                        footer */
 
 .footer {
-    padding: 9.6rem 0;
+    padding: 12.8rem 0;
+	border-top: solid 1px #eee;
 }
 
 .grid--5--cols {
@@ -748,4 +751,6 @@ body {
 .address{
 	margin-bottom: 2.4rem;
 }
-.grid-footer{}
+.grid--footer{
+	grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
