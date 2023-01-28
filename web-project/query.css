@@ -8,91 +8,106 @@
     .primary-heading {
         font-size: 4.4rem;
     }
-	.gallery{
-		grid-template-columns: 1fr 1fr;
-	}
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 /* 1200px */
-@media(max-width:75em)
-{
-	html{
-		font-size: 56.25%;
-		/* 9px/16px */
-	}
-	.secondary-heading {
-		font-size: 3.6rem;
+@media (max-width: 75em) {
+    html {
+        font-size: 56.25%;
+        /* 9px/16px */
+    }
+    .secondary-heading {
+        font-size: 3.6rem;
+    }
+    .tertiary-heading {
+        font-size: 2.4rem;
+    }
+    .grid {
+        column-gap: 4.8rem;
+        row-gap: 6.4rem;
+    }
+    .header {
+        padding: 0 3.2rem;
+    }
+    .hero {
+        gap: 4.8rem;
+    }
 
-	}
-	.tertiary-heading {
-		font-size:2.4rem;
-	}
-	.grid{
-		column-gap: 4.8rem;
-		row-gap: 6.4rem;
-	}
-	.header{
-		padding:0 3.2rem;
-	}
-	.hero{
-		gap: 4.8rem;
-	}
-
-	.main-nav-link{
-		gap:3.2rem;
-	}
-	.testimonials-container {
-		padding:9.6rem 3.2rem ;
-	}
+    .main-nav-link {
+        gap: 3.2rem;
+    }
+    .testimonials-container {
+        padding: 9.6rem 3.2rem;
+    }
 }
 
 /* 940/16≈59em */
-@media(max-width:59em)
-{
-	html{
-		/* 8/16 =50% */
-		font-size: 50%;
+@media (max-width: 59em) {
+    html {
+        /* 8/16 =50% */
+        font-size: 50%;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 0 8rem;
+        gap: 6.4rem;
+    }
+    .hero-image {
+        width: 50%;
+    }
+    .delivered-meals {
+        justify-content: center;
+        margin-top: 3.2rem;
+    }
+
+    .logo img {
+        height: 2.4rem;
+    }
+    .step-number {
+        font-size: 7.4rem;
+    }
+
+    .meal-content {
+        padding: 2.4rem 3.2rem 3.2rem 3.2rem;
+    }
+
+    .section-testmonials {
+        grid-template-columns: 1fr;
+    }
+    .gallery {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .cta {
+        grid-template-columns: 60fr 40fr;
+    }
+    .cta-form {
+        grid-template-columns: 1fr;
+    }
+    .btn-form {
+        margin-top: 1.2rem;
+    }
+	.btn-mobile-nav{
+		display: block;
 	}
-	.hero{
-		grid-template-columns: 1fr;
-		text-align: center;
-		padding: 0 8rem;
-gap: 6.4rem;
-	}
-	.hero-image {
-		width: 50%;
-	}
-	.delivered-meals{
+	.main-nav{
+		position: absolute;
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		align-items: center;
 		justify-content: center;
-		margin-top: 3.2rem;
 	}
+	.main-nav-list{
+		flex-direction: column;
+		gap: 4.8rem;
+	}
+	.main-nav-link:link,
+.main-nav-link:visited {
+	font-size: 3rem;
+}
 
-	.logo img{
-		height: 2.4rem;
-
-	}
-	.step-number{
-		font-size: 7.4rem;
-	}
-
-	.meal-content{
-		padding: 2.4rem 3.2rem 3.2rem 3.2rem;
-	}
-
-	.section-testmonials{
-		grid-template-columns: 1fr;
-
-	}
-	.gallery{
-		grid-template-columns: repeat(6,1fr)
-	}
-	.cta{
-		grid-template-columns: 60fr 40fr;
-	}
-	.cta-form{
-		grid-template-columns: 1fr;
-	}
-	.btn-form{
-		margin-top: 1.2rem;
-	}
-} 
+}
