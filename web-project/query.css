@@ -42,6 +42,28 @@
 		gap:3.2rem;
 	}
 	.testimonials-container {
-		padding:9.6rem 3.2rem;
+		padding:9.6rem 3.2rem ;
 	}
 }
+
+/* 940/16≈59em */
+@media(max-width:59em)
+{
+	html{
+		/* 8/16 =50% */
+		font-size: 50%;
+	}
+	.hero{
+		grid-template-columns: 1fr;
+		text-align: center;
+		padding: 0 8rem;
+gap: 6.4rem;
+	}
+	.hero-image {
+		width: 50%;
+	}
+	.delivered-meals{
+		justify-content: center;
+		margin-top: 3.2rem;
+	}
+} 
